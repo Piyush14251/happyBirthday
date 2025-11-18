@@ -1,6 +1,10 @@
 body {
-	/*background-color: #FFDAB9;	*/
 	background-color: #000;
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	-webkit-transition:background-color linear 5s;
 	-moz-transition:background-color linear 5s;
 	-o-transition:background-color linear 5s;
@@ -1056,19 +1060,17 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
 	}
 	33%{
-		transform:translate(0px,0px);
-		transform:rotate(10deg);
+		transform:translate(0px,0px) rotate(10deg);
 		/*-webkit-transform:scale(1.5);*/
 	}
 	66% {
-		transform:translate(0px,100px);
-		transform:rotate(-10deg);
+		transform:translate(0px,100px) rotate(-10deg);
 	}
 	100% {
 		transform:translate(0px,0px);
